@@ -78,8 +78,3 @@ Once the alignemnt is complete get the count matrix using featureCounts. -s 0,1,
 featureCounts -t exon -g gene_id -p -s 0 -a /path/to/genome.gtf -T 12 -o /path/to/output_featureCounts.txt /path/to/bam_files/*_Aligned.sortedByCoord.out.bam
 ```
 
-
-# Save the heatmap
-ggsave(file = "generalized_gene_expression_heatmap.svg", plot = combined_genes_heatmap$gtable, width = 10, height = 8, units = "in")
-
-```
