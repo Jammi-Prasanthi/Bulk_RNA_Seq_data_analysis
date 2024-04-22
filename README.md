@@ -78,3 +78,4 @@ Once the alignemnt is complete get the count matrix using featureCounts. -s 0,1,
 featureCounts -t exon -g gene_id -p -s 0 -a /path/to/genome.gtf -T 12 -o /path/to/output_featureCounts.txt /path/to/bam_files/*_Aligned.sortedByCoord.out.bam
 ```
 
+Once the count matrix is generated we can proceed for differential gene expression analysis, GSEA, etc and the corresponding R script can be found iun differential_gene_expression.R 
